@@ -1,4 +1,3 @@
-# Merge Sort Visualizer Project
 
 # Merge Sort Visualizer (SFML)
 
@@ -13,27 +12,25 @@ A graphical visualizer for the Merge Sort algorithm using C++ and SFML.
 ## Requirements
 - **C++17 or newer**
 - **SFML 2.x** (Simple and Fast Multimedia Library)
-- **SFML 2.x** (Simple and Fast Multimedia Library)
+	- Libraries: `sfml-graphics`, `sfml-window`, `sfml-system`
 - Windows (tested), but should work on Linux/macOS with minor changes
 
 ## Setup Instructions
-
-### 1. Install SFML
-- Download SFML from: https://www.sfml-dev.org/download.php
-- Follow the official guide for your OS: https://www.sfml-dev.org/tutorials/2.6/
-- Make sure the SFML DLLs (`sfml-graphics-2.dll`, `sfml-window-2.dll`, `sfml-system-2.dll`) are in the same folder as the executable or in your system PATH.
-
-### 2. Build the Project
-Open a terminal in the `final` directory and run:
-```sh
-g++ -std=c++17 merge_sort_visualizer.cpp -o merge_sort_visualizer.exe -lsfml-graphics -lsfml-window -lsfml-system
-```
-Or use the provided VS Code build task (`build SFML`).
-
-### 3. Run the Visualizer
-```sh
-./merge_sort_visualizer.exe
-```
+1. **Install SFML**
+	 - Download SFML from: https://www.sfml-dev.org/download.php
+	 - Follow the official guide for your OS: https://www.sfml-dev.org/tutorials/2.6/
+	 - Place the SFML DLLs (`sfml-graphics-2.dll`, `sfml-window-2.dll`, `sfml-system-2.dll`) in the same folder as the executable or add them to your system PATH.
+2. **Build the Project**
+	 - Open a terminal in the `final` directory and run:
+		 ```sh
+		 g++ -std=c++17 merge_sort_visualizer.cpp -o merge_sort_visualizer.exe -lsfml-graphics -lsfml-window -lsfml-system
+		 ```
+	 - Or use the provided VS Code build task (`build SFML`).
+3. **Run the Visualizer**
+	 - In the `final` folder, run:
+		 ```sh
+		 ./merge_sort_visualizer.exe
+		 ```
 
 ## Controls
 - **SPACE**: Play/Pause animation
@@ -50,40 +47,4 @@ Or use the provided VS Code build task (`build SFML`).
 This project is for educational purposes. See SFML's license for DLL redistribution terms.
 
 ---
-Feel free to fork, modify, and share!
-- Required libraries: `sfml-graphics`, `sfml-window`, `sfml-system`
-- Download: https://www.sfml-dev.org/download.php
-
-### Setup Instructions
-1. **Install SFML**
-	- Follow the official guide for your OS: https://www.sfml-dev.org/tutorials/2.6/
-	- Place the SFML DLLs (`sfml-graphics-2.dll`, `sfml-window-2.dll`, `sfml-system-2.dll`) in the same folder as the executable or add them to your system PATH.
-
-2. **Build the Project**
-	- Open a terminal in the project directory and run:
-	  ```sh
-	  g++ -std=c++17 final/merge_sort_visualizer.cpp -o final/merge_sort_visualizer.exe -lsfml-graphics -lsfml-window -lsfml-system
-	  ```
-	- Or use the provided VS Code build task (`build SFML`).
-
-3. **Run the Visualizer**
-	- In the `final` folder, run:
-	  ```sh
-	  ./merge_sort_visualizer.exe
-	  ```
-
-### Controls
-- **SPACE**: Play/Pause animation
-- **R**: Reset to beginning
-- **N**: Generate new random array (same size)
-- **UP/DOWN**: Speed control
-- **ESC**: Exit
-
-### Troubleshooting
-- If you see errors about missing DLLs, download them from the SFML website and place them next to the `.exe`.
-- If you get linker errors, make sure SFML is installed and the library paths are set up correctly.
-
-### License
-This project is for educational purposes. See SFML's license for DLL redistribution terms.
-
 Feel free to fork, modify, and share!
